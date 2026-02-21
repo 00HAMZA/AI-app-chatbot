@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto relative text-center w-full">
         <div className="max-w-7xl mx-auto text-center lg:text-left flex flex-col lg:grid lg:grid-cols-2 gap-7 sm:gap-8 lg:gap-12 items-center relative">
           <div className="">
-            <div className="bg-gradient-to-r from-blue-300/30 to-white-200 inline-flex items-center sm:px-4 px-4 py-2 flex flex-row gap-2 bg-blue-500/10 border border-blue-400/40 rounded-3xl mb-3 sm:mb-4">
+            <div className="w-auto h-auto bg-gradient-to-r from-blue-300/30 to-white-200 inline-flex items-center sm:px-4 px-4 py-2 flex flex-row gap-2 bg-blue-500/10 border border-blue-400/40 rounded-3xl mb-3 sm:mb-4">
               <Sparkles className="w-4 h-4 text-blue-200/40" />
               <span className="text-xs sm:text-sm text-blue-300">
                 Introducing CodeFlow AI 2.0
@@ -76,7 +76,7 @@ export default function Hero() {
           </div>
           <div className="relative order-2 w-full">
             <div className="relative bg-white/7 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
-              <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:w-[349px] lg:h-[449px] border border-white/7 w-full">
+              <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[349px] lg:h-[449px] border border-white/7 w-full">
                 {/* IDE HEADER */}
                 <div className="flex  justify-between items-center px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
                   <div className="flex space-x-2 items-center">
