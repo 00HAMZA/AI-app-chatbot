@@ -69,7 +69,7 @@ export default function Features() {
               className={`flex flex-col lg:flex-row items-center gap-8 sm:gap-12 ${feature.imagePosition === "right" ? "lg:flex-row-reverse" : ""}`}
             >
               {/* Code Section */}
-              <div className="flex-1 relative bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 overflow-hidden group-hover:border group-hover:border-blue-600/50 transition-all duration-300">
+              <div className="flex-1 relative bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 overflow-hidden hover:border hover:border-blue-600/50 hover:shadow-[0_0_12px_rgba(37,99,235,0.35)] transition-all duration-300">
                 <div className="bg-black/40 rounded-2xl flex-1 w-full">
                   <div className="ralative group">
                     {/* Ide interface */}
@@ -109,10 +109,10 @@ export default function Features() {
               <div className="flex-1 w-full">
                 {/* text Section */}
                 <div className="max-w-full mx-auto lg:mx-0 text-center lg:text-left">
-                  <h2 className="text-4xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-white">
+                  <h2 className="text-4xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-white/80">
                     {feature.title}
                   </h2>
-                  <p className="text-gray-300 text-base text-xl sm:text-lg leading-relaxed">
+                  <p className="text-gray-300/40 text-base text-xl sm:text-lg leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
