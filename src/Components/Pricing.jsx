@@ -1,6 +1,6 @@
 //<></>
 //{}
-import { Check, TrendingUpDown , Star} from "lucide-react";
+import { Check, TrendingUpDown, Star } from "lucide-react";
 const prices = [
   {
     state: "Entreprise",
@@ -72,15 +72,15 @@ export default function Pricing() {
         {prices.map((price, key) => (
           <div
             key={key}
-            className={`raltive bg-slate-900/50 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${price.star ? "border-blue-500 shadow-2xl shadow-blue-500/20 lg:scale-108" : "border border-slate-800 hover:border-slate-700"}`}
+            className={`relative bg-slate-900/50 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${price.star ? "border-blue-500 shadow-2xl shadow-blue-500/20 lg:scale-108" : "border border-slate-800 hover:border-slate-700"}`}
           >
             {price.star && (
-                <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
-                    <div className="flex items-center space-x-1 px-3 sm:px-4 py-1 sm:py-1.5 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full text-xs sm:text-sm font-semibold shadow-lg whitespace-nowrap">
-                        <Star className="w-3 h-3 sm:h-3 sm:h-3 fill-white"/>
-                        <span>Most Popular</span>
-                    </div>
+              <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
+                <div className="flex items-center space-x-1 px-3 sm:px-4 py-1 sm:py-1.5 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full text-xs sm:text-sm font-semibold shadow-lg whitespace-nowrap">
+                  <Star className="w-3 h-3 sm:h-3 sm:h-3 fill-white" />
+                  <span>Most Popular</span>
                 </div>
+              </div>
             )}
             <div className="flex flex-col gap-2 items-center">
               <span className="font-semibold text-2xl">{price.state}</span>
@@ -93,11 +93,14 @@ export default function Pricing() {
               <span className="text-gray-500 font-medium text-sm">/month</span>
             </div>
             <div className="flex flex-col items-center">
-              <ul>
+              <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 flex-row">
                 {price.detailes.map((detaile, key) => (
-                  <li key={key} className="flex flex-start gap-2  space-x-2 sm:space-x-3">
-                    <div className="flex-shrink-0 w-4 h-4 sm:h-5 sm:w-5 rounded-full bg-blue-500/20 flex items-center justify-center mt-0.5">
-                      <Check className="w-2 h-2 sm:w-4 sm:h-4 text-blue-400/50" />
+                  <li
+                    key={key}
+                    className="flex flex-start gap-2  space-x-2 sm:space-x-3"
+                  >
+                    <div className="flex-shrink-0 w-3 h-3 sm:h-4 sm:w-4 rounded-full bg-blue-500/20 flex items-center justify-center mt-0.5">
+                      <Check className="w-2.5 h-2.5 sm:w-5 sm:h-5 text-blue-400/50" />
                     </div>
                     <div className="text-sm font-medium text-gray-400">
                       {detaile}
@@ -106,6 +109,15 @@ export default function Pricing() {
                 ))}
               </ul>
             </div>
+            <button
+              className={`mt-auto w-full flex justify-center items-center rounded-sm py-3 sm:py-2.5 font-semibold cursor-pointer transition-all duration-200 ${
+                price.star
+                  ? "bg-gradient-to-b from-blue-500 to-cyan-500 border border-gray-300/30"
+                  : "bg-white/5 border border-white/10 hover:bg-white/10"
+              }`}
+            >
+              Get Started
+            </button>
           </div>
         ))}
       </div>
