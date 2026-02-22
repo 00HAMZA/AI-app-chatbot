@@ -26,7 +26,7 @@ const users = [
 ];
 export default function Testimonioles() {
   return (
-    <section className="relative py-16 sm:py-20 px-10 sm:px-6 lg:px-8">
+    <section id="Testimoniales" className="relative py-16 sm:py-20 px-10 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-start gap-8 sm:gap-12 lg:gap-16">
           <div className="lg:w-1/2 w-full text-center lg:text-left">

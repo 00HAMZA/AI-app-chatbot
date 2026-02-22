@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Features from "./Features";
 //<></>
 //{}
 export default function Navbar() {
@@ -24,7 +25,7 @@ export default function Navbar() {
           {/* Right side — nav links */}
           <div className="md:flex hidden items-center space-x-6 lg:space-x-8">
             <a
-              href="#Features"
+              href="#features"
               className="text-gray-400 hover:text-white text-sm lg:text-base"
             >
               Features

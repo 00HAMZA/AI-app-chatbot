@@ -48,7 +48,7 @@ const features = [
 ];
 export default function Features() {
   return (
-    <section className="py-17 sm:py20 px-10 sm:px-6 lg:px-10 relative">
+    <section id="features" className="py-17 sm:py20 px-10 sm:px-6 lg:px-10 relative">
       <div className="absolute top-20 left-4 sm:left-10 w-78 sm:w-72 h-78 sm:h-72 bg-blue-500/30 rounded-full blur-3xl animate-pulse"></div>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 sm:mb-17 lg:mb-20">
