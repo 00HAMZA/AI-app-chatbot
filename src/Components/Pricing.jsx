@@ -5,7 +5,7 @@ const prices = [
   {
     state: "Entreprise",
     description: "For large organizations",
-    pricing: "199",
+    pricing: "199.99",
     detailes: [
       "Unlimited team members",
       "Unlimited storage",
@@ -23,7 +23,7 @@ const prices = [
   {
     state: "Professional",
     description: "best for growing businesses",
-    pricing: "79",
+    pricing: "79.99",
     detailes: [
       "Up to 25 team members",
       "100GB storage",
@@ -39,7 +39,7 @@ const prices = [
   {
     state: "Starter",
     description: "Perfect for individuals and small teams",
-    pricing: "29",
+    pricing: "29.99",
     detailes: [
       "Up to 5 team members",
       "10GB storage",
@@ -68,12 +68,13 @@ export default function Pricing() {
           free trial
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-10 lg:gap-6 mt-16 px-10 sm:px-12 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-10 lg:gap-10 mt-16 px-10 sm:px-12 mb-15">
         {prices.map((price, key) => (
           <div
             key={key}
-            className={`relative bg-slate-900/50 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${price.star ? "border-blue-500 shadow-2xl shadow-blue-500/20 lg:scale-108" : "border border-slate-800 hover:border-slate-700"}`}
+            className={`relative bg-slate-900/50 group backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${price.star ? "border-blue-500 shadow-2xl shadow-blue-500/20 lg:scale-108" : "border border-slate-800 hover:border-slate-700"}`}
           >
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" /> 
             {price.star && (
               <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
                 <div className="flex items-center space-x-1 px-3 sm:px-4 py-1 sm:py-1.5 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full text-xs sm:text-sm font-semibold shadow-lg whitespace-nowrap">
@@ -112,7 +113,7 @@ export default function Pricing() {
             <button
               className={`mt-auto w-full flex justify-center items-center rounded-sm py-3 sm:py-2.5 font-semibold cursor-pointer transition-all duration-200 ${
                 price.star
-                  ? "bg-gradient-to-b from-blue-500 to-cyan-500 border border-gray-300/30"
+                  ? "bg-gradient-to-b from-blue-500 to-cyan-500 border border-gray-300/30 transition-all duration-300 hover:scale-105"
                   : "bg-white/5 border border-white/10 hover:bg-white/10"
               }`}
             >
@@ -120,6 +121,12 @@ export default function Pricing() {
             </button>
           </div>
         ))}
+      </div>
+      <div className="flex items-center gap-1 justify-center mb-20 text-medium">
+        <div className="text-gray-400">Need a custom plan?</div>
+        <a href="#" className="text-cyan-400">
+          Contact our Sales team
+        </a>
       </div>
     </div>
   );

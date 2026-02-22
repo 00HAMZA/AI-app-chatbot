@@ -49,7 +49,7 @@ export default function Hero() {
               <span className="bg-gradient-to-r from-white via-blue-200 to-cyan-300 bg-clip-text text-transparent text-block mb-1 sm:mb-2">
                 Code Faster
               </span>
-              <span className="bg-gradient-to-r from-blue-499 via-cyan-300 to-blue-499 bg-clip-text text-transparent text-block mb-1 sm:mb-2">
+              <span className="bg-gradient-to-r from-blue-500 via-cyan-200 to-blue-499 bg-clip-text text-transparent text-block mb-1 sm:mb-2">
                 Build Better
               </span>
               <span className="bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent text-block mb-1 sm:mb-2">
