@@ -57,7 +57,7 @@ export default function Pricing() {
       <div>
         <div className="flex flex-col items-center text-5xl font-semibold lg:font-bold  gap-2 mt-10 mb-5">
           <span className="bg-gradient-to-r from-white to-gray-700 bg-clip-text text-transparent">
-            Simple, Transparent{" "}
+            Simple, Transparent
           </span>
           <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             Pricing Plans
